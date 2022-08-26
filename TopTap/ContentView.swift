@@ -11,12 +11,11 @@ struct ContentView: View {
     var body: some View {
 		let playText : String = "Play"
 		let pauseText : String = "Pause"
-		let stopText : String = "Stop"
 
 		VStack {
 			CustomTextView(textValue: playText, colorValue: Color.red)
-			CustomTextView(textValue: pauseText, colorValue: Color.blue)
-			CustomTextView(textValue: stopText, colorValue: Color.yellow)
+			CustomTextView(textValue: pauseText)
+			CustomTextView(colorValue: Color.yellow)
 
 		}
 	}

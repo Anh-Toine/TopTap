@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CustomTextView: View {
-	let textValue: String
-	let colorValue: Color
+	var textValue: String = "Tap Me!"
+	var colorValue: Color = Color.blue
     var body: some View {
 		
 			Text(textValue)

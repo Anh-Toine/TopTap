@@ -16,18 +16,20 @@ struct ContentView: View {
 						.font(.body)
 						.fontWeight(.medium)
 						.multilineTextAlignment(.center)
-						.frame(width: 80, height: 34)
-						.background(Color.green.cornerRadius(5.5).padding([.top],-2))
+						.frame(width: 100, height: 40)
+						.background(Color.green)
+						.cornerRadius(20)
 						.foregroundColor(Color.white)
-						.padding([.top,.trailing], -3)
+						.padding(.leading, -3)
 					
 					Spacer()
 					
 				}
 				Spacer()
 			}
+			Spacer()
 		}
-		.padding([.trailing],240)
+//		.padding([.trailing],240)
     }
 }
 

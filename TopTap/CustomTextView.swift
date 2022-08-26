@@ -16,7 +16,7 @@ struct CustomTextView: View {
 				.font(.body)
 				.fontWeight(.medium)
 				.multilineTextAlignment(.center)
-				.frame(width: 100, height: 40)
+				.frame(width: 100, height: 50)
 				.background(colorValue)
 				.cornerRadius(15)
 				.foregroundColor(Color.white)

@@ -9,28 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-		VStack{
-			VStack{
-				HStack{
-					Text("Tap Me!")
-						.font(.body)
-						.fontWeight(.medium)
-						.multilineTextAlignment(.center)
-						.frame(width: 100, height: 40)
-						.background(Color.green)
-						.cornerRadius(20)
-						.foregroundColor(Color.white)
-						.padding(.leading, -3)
-					
-					Spacer()
-					
-				}
-				Spacer()
-			}
-			Spacer()
+		let playText : String = "Play"
+		let pauseText : String = "Pause"
+		let stopText : String = "Stop"
+
+		VStack {
+			CustomTextView(textValue: playText, colorValue: Color.red)
+			CustomTextView(textValue: pauseText, colorValue: Color.blue)
+			CustomTextView(textValue: stopText, colorValue: Color.yellow)
+
 		}
-//		.padding([.trailing],240)
-    }
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
